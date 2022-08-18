@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PICKER</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        button {
+            padding:10px;
+            border-radius: 40px;
+        }
+        div {
+            display: flex;
+            justify-content: left;
+            align-items: flex-end;
+            background-color: purple;
+            height: 430px;;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <button>Change Color</button>
+    </div>
+
+    <script>
+        let btn = document.querySelector("button");
+        let box = document.querySelector("div");
+        let color = ['blue','yellow', 'green', 'brown','black']
+
+
+        btn.onclick = function () {
+            box.style.backgroundColor = color[random()];
+            console.log(random());
+        }
+        function random() {
+           return Math.floor(Math.random()*color.length)
+        }
+        function fcal() {
+            let a = 7;
+            let b = 8;
+            a + b;
+        }
+    </script>
+
+    
+</body>
+</html>

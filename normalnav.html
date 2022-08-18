@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        li{
+            display: inline;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+        nav{
+            background-color: black;
+        }
+        ul{
+            padding: 10px;
+        }
+        a:hover{
+            background-color: red;
+        }
+        @media screen and (max-width: 600px) {
+            body{
+                background-color: blue;
+            }
+            li{
+                display: block;
+                text-align: center;
+            }
+            li:hover{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Tourism</a></li>
+        <li><input type="text" placeholder="search"></li>
+    </ul>
+    </nav>
+    
+</body>
+</html>

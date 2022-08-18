@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        li{
+            display: inline;
+            padding: 10px;
+        }
+        nav{
+            display:flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: white;
+
+        }
+        a{
+            text-decoration: double;
+            color: black;
+        }
+        .logo{
+            color: yellow;
+            padding-left: 100px;
+            
+        
+        }
+        .button{
+            background-color: blueviolet;
+        }
+        .login{
+            border: none;
+            padding: 10px;
+            background-color: white;
+        }
+        .box{
+            display: flex;
+            width: 100%;
+        }
+        .item{
+           padding: 100px;
+            font-size: 50px;
+          margin-bottom: 60px;
+          width: 60%;
+        }
+        .text  {
+            font-size: 15px;   
+        }
+        .plan{
+            background-color: purple;
+            padding: 10px;
+            border: none;
+            color: white;
+        }
+         .plan:hover{
+            background-color:blue;
+
+        }
+        .pic{
+            width: 40%;
+        }
+        .picture{
+            width: 300px;
+            padding-top: 50px;
+            padding-left: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">nepal</div>
+        
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+       </ul>
+       <div class="butt">
+       <button  class="login">Login</button>
+        <button class="login"  style="background-color: purple; color: white;">Sign up</button>
+    </div>
+    </nav>
+     <div class="box">
+    <div class="item"><h1>Life is short <br> and the world <br> is wide!</h1>
+        <br>
+    <p class="text">To get the best of your adventure you just need to leave</p>
+    <button class="plan">Plan a trip</button>
+    </div>
+    <div class="pic"><img class="picture" src="crop.jpg"></div>
+
+    </div>
+</body>
+</html>

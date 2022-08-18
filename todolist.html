@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box {
+            width: 100%;
+            height:400px;
+            background-color: yellowgreen;
+            display:grid;
+            place-content: center;
+        }
+        input {
+            padding:5px;
+            margin: 5px;
+        }
+        input, button {
+            padding: 5px;
+            margin:  5px;
+            border: none;
+        }
+        input:focus {
+            background-color: aqua;
+            
+        }
+        button:hover {
+            background-color: aqua;
+        }
+        li {
+            color: white;
+            background-color: blue;
+            display: inline;
+            padding: 5px;
+            margin: 2px ;
+        }
+        h1 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>TODO LIST</h1>
+        <input type="text" id="text">
+        <button>Submit</button>
+        <ul>
+
+        </ul>
+    </div>
+        
+
+    <script>
+        var submit = document.querySelector("button");
+        submit.disabled = true;
+        submit.addEventListener("click", function (){
+            var text = document.querySelector("#text").value;
+            console.log(text);
+            li = document.createElement("li");
+            li.innerHTML = text;
+            var list = document.querySelector("ul");
+            list.append(li)
+        })
+        text.onkeyup = function () {
+          if (text.length > 0) {
+            submit.disabled = false;
+          } else {submit.disabled = true;}
+        }
+
+    </script>
+</body>
+</html>

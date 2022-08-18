@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STATEMENT</title>
+    <style>
+        .box {
+            background-color: purple;
+            height: 400px;
+            display: grid;
+            place-content: center;
+            text-align: center;
+
+        }
+        input{
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>True  or False</h1>
+        <input type="number" id="one">&
+        <input type="number" id="two">
+        <button>CHECK</button>
+    </div>
+
+    <script>
+        var btn = document.querySelector("button");
+        btn.addEventListener("click", function (){
+            var one = document.getElementById("one").value;
+            var two = document.getElementById("two").value;
+            
+            console.log(one);
+            console.log(two);
+
+            if (one > two) {
+               document.querySelector("h1").textContent = "true";
+            } else
+            (document.querySelector("h1").textContent = "false");
+        })
+
+    </script>
+</body>
+</html>
